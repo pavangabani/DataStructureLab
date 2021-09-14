@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DOM</title>
+<style type="text/css">
+div{
+background-color: lightblue;
+width: 300px;
+border: 2px solid black;
+padding: 50px;
+margin: 20px;
+}
+</style>
+</head>
+<script
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></sc
+ript>
+<body ng-app="">
+<div>
+<input type="checkbox" ng-model="dis"> Disable button:<input type="button"
+value="Click" ng-disabled="dis">
+<br>
+<br>
+<input type="checkbox" ng-model="shw"> Show button :<input type="button"
+value="Click" ng-show="shw">
+<br>
+<br>
+<input type="checkbox" ng-model="hide"> Hide button :<input type="button"
+value="Click" ng-hide="hide">
+<br>
+<br>
+Total Click:<input type="button" Value="Click" ng-click="count=count+1"
+ng-init="count=0">{{" "+count}}
+</div>
+</body>
+</html>

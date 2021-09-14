@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+                  body 
+	{
+  	background-image: url('pavan.jpg');
+ 	 background-repeat: no-repeat;
+  	background-attachment: fixed; 
+ 	 background-size: 60% 100%;
+	}
+
+	table, th, td { border: 1px solid black}
+</style>
+	<title> Resume</title>
+</head>
+<body>
+	<h1 style="background-color:rgba(240, 240, 240,0.4);">Resume</h1>
+	<pre> Name    : Pavan Gabani </pre>
+                  <pre>Address  : APC chhatralay, A.V. Road, Annad</pre>
+	<pre>Email Id  :  Pavan.gabani@gmail.com</pre>
+	<pre>No           : 7283889206</pre>
+	<h3 style="background-color:rgba(240, 240, 240,0.4);">Technicle skills</h3>
+
+	<ul>
+	  <li>Addobe Photoshop</li>
+	  <li>Addobe After Effect</li>
+	  <li>C++ language</li>
+	  <li>C language</li>
+	</ul>
+
+ 	<h3 style="background-color:rgba(240, 240, 240,0.4);">Soft skills</h3>
+
+	<ul>
+  	<li>Problem solving</li>
+  	<li> Time  Management</li>
+  	<li>Presentation Skill </li>
+ 	<li>Comunication Skill</li>
+	</ul>
+
+	<h3 style="background-color:rgba(240, 240, 240,0.4);">Qualification</h3>
+
+	<table>
+	<tr>
+     	<th>Board</th>
+   	 <th>Marks</th>
+	</tr>
+
+	<tr>
+	<td>SSC</td>
+	<td>85% </td>
+	</tr>
+
+	<tr>
+	<td>HSC</td>
+	<td>85% </td>
+	</tr>
+
+	<tr>
+	<td>SEM - 1</td>
+	<td>7.06 SPI </td>
+	</tr>
+
+	<tr>
+	<td>SEM - 2</td>
+	<td>6.5 SPI</td>
+	</tr>
+
+	</table>
+
+<h4>Reference</h4>
+<p><a href="https://www.w3schools.com/html/">Reference Website</a></p>
+
+
+</body>
+</html>

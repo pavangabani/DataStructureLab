@@ -1,0 +1,60 @@
+
+
+<html>
+<head>
+<title>validation</title>
+
+<script type="text/javascript" language="javascript">
+function val()
+{ 
+    
+    var name=document.f.nm.value;
+    var phone=document.f.mb.value;
+    var email=document.f.em.value;
+    var password=document.f.pwd.value;
+    var cpassword=document.f.cpwd.value;
+    
+     var npat=/^[a-zA-Z]{7,}$/
+    var nr=npat.test(name);
+    document.write("Name format is:");
+    document.write(nr);
+    document.write("</br>");
+    
+     var ppat=/^[1-9][0-9]{9}$/
+    var pr=ppat.test(phone);
+    document.write("Phone no format is:");
+    document.write(pr);
+    document.write("</br>");
+    
+     var epat=/^\w+([\.-]?\w+)*@([\.-]?\w+)*([\.-]?\w{2,4})$/
+    var er=epat.test(email);
+    document.write("Email format is:");
+    document.write(er);
+    document.write("</br>");
+    
+    var pspat=/^([A-Za-z0-9]{3,})\w+$/
+    var psr=pspat.test(password);
+    document.write("Password format is:");
+    document.write(psr);
+    document.write("</br>");
+    if(cpassword!=password&&psr==true)
+    document.write("but password does not match with confirm password");
+   
+}
+</script>
+</head>
+<body>
+<center>
+<h2>Registration Form</h2>
+
+<form name="f"  style="align:center;border:2px  solid  black;height:300px;width:400px;"><br>
+<b>Name: <b><input type="text" style="align:right;border:2px  solid  black; "   name="nm"><br><br>
+<b>Phone: <b><input type="text" style="align:center;border:2px  solid  black; "  id="mb"  name="mb"><br><br>
+ <b>Email: <b> <input type="text"  style="align:center;border:2px  solid  black;" id="em"  name="em"><br><br>
+<b>Pasword: <b><input type="password"  id="pwd" style="align:center;border:2px  solid  black;"  name="pwd"><br><br>
+<b>Confirm password: <b><input type="Password"  id="cpwd" style="align:center;border:2px  solid  black;"  name="cpwd"><br><br>
+<input type="button" name="submit" value="submit" style="align:center;border:2px  solid  black;" onclick="val()">
+</center>
+</form>
+</body>
+</html>

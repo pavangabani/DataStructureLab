@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+function f()
+{
+document.getElementById("d").style.background="yellow";
+}
+function f1()
+{
+document.getElementById("d").style.background="green";
+}
+
+</script>
+<div id="d" style="background-color:red" onmouseover="f()" on mouseout="f1()">mouse over and out here</div>
+</body>
+</html>

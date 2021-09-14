@@ -1,0 +1,44 @@
+
+<html>
+<head>
+<title>validation</title>
+<script type="text/javascript" language="javascript">
+	function val()
+	{
+	var name =        document.getElementById("name").value;
+	var phone=        document.getElementById("phone").value;
+	var email=         document.getElementById("email").value;
+	var password=  document.getElementById("password").value;
+	var cpassword=document.getElementById("cpassword").value;
+
+	var npat=/^[a-zA-Z]{7,}$/
+	if(!npat.test(name)){alert(invalid name);}
+            
+
+	var ppat=/^[1-9][0-9]{9}$/
+	if(!ppat.test(phone)){alert(invalid phone number);}
+
+	var epat=/^\w+([\.-]?\w+)*@([\.-]?\w+)*([\.-]?\w{2,4})$/
+	if(!epat.test(email)){alert(invalid email);}
+
+	var pspat=/^([A-Za-z0-9]{3,})\w+$/
+                 if(!pspat.test(password)){alert(invalid password);}
+	if(cpassword!=password&&psr==true)
+	alert(" password does not match");
+}
+</script>
+</head>
+<body>
+<center>
+<h2>Registration Form</h2>
+	<form name="f" ><br>
+	<b>Name: <b>     <input type="text" id="name"><br><br>
+	<b>Phone: <b>    <input type="text" id="phone" ><br><br>
+	<b>Email: <b>      <input type="text" id="email" ><br><br>
+	<b>Pasword: <b><input type="password" id="password"><br><br>
+	<b>Confirm password: <b><input type="Password" id="cpassword" ><br><br>
+	<input type="button" name="submit" value="submit" onclick="val()">
+</center>
+</form>
+</body>
+</html>

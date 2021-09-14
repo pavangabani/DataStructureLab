@@ -1,0 +1,45 @@
+
+  <html>
+<head>
+        <title>Add program</title>
+        <script language="javascript">
+                function addNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 + val2;
+                }
+ function subNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 - val2;
+                }
+ function mulNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 * val2;
+                }
+ function divNumbers()
+                {
+                        var val1 = parseInt(document.getElementById("value1").value);
+                        var val2 = parseInt(document.getElementById("value2").value);
+                        var ansD = document.getElementById("answer");
+                        ansD.value = val1 / val2;
+                }
+        </script>
+  </head>
+  <body background="">
+        value1 = <input type="text" id="value1"  value=""/><br><br>
+        value2 = <input type="text" id="value2"  value=""/><br><br>
+        <input type="button" value="+" onclick="javascript:addNumbers()" style="align:center"/>
+         <input type="button" value="-" onclick="javascript:subNumbers()"/>
+         <input type="button" value="*" onclick="javascript:mulNumbers()"/>
+        <input type="button" value="/" onclick="javascript:divNumbers()"/><br><br>
+        Answer = <input type="text" id="answer"  value=""/>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+class stack
+{
+    int tos=-1;
+    int fi[5];
+    public:
+    void push(char a)
+    {
+        fi[++tos]=a;
+    }
+    int pop()
+    {
+        return(fi[tos--]);
+    }
+    void dp(){
+    cout<<fi[0];
+    }
+
+};
+int main()
+{
+    stack s;
+
+
+}
+
+
